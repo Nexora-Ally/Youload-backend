@@ -1,0 +1,21 @@
+name = "youload-backend"
+compatibility_date = "2024-01-15"
+compatibility_flags = ["nodejs_compat"]
+
+[[kv_namespaces]]
+binding = "AUTH_STORE"
+id = "your-kv-namespace-id"
+preview_id = "your-kv-namespace-preview-id"
+
+[vars]
+CLIENT_ID = "your-google-client-id"
+CLIENT_SECRET = "your-google-client-secret"
+REDIRECT_URI = "https://youload.me/api/auth/callback"
+FRONTEND_URL = "https://youload.me"
+JWT_SECRET = "your-jwt-secret-key"
+
+[env.production]
+zone_id = "your-cloudflare-zone-id"
+
+[env.staging]
+zone_id = "your-cloudflare-zone-id"
